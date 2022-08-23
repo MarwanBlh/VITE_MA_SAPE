@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col">
+    <h1>All clothes</h1>
+  </div>
+</div>
+
+<div class="row">
+  <% @clothes.each do |clothe| %>
+    <div class="col-sm-12 col-md-4 mb-2">
+      <div class="card">
+        <%# <%= image_tag clothe.picture_url, class: "card-img-top" %> %>
+        <img class="card-img-top" src="https://images1.vinted.net/t/02_00d09_1KgjXLaGu1i1K4ppsx8n6BxY/f800/1661269259.jpeg?s=d1cac75b03b640c45ef577722897286ade1c63c6">
+        <div class="card-body">
+          <h5 class="card-title"><%= clothe.title %></h5>
+          <h6 class="card-price"><%= clothe.price %></h5>
+          <ul class="card-information">
+            <li><%= clothe.size %></li>
+            <li><%= clothe.address %></li>
+          </ul>
+          <a href="#" class="btn btn-outline-primary">Booking</a>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
