@@ -10,6 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema[7.0].define(version: 2022_08_23_134630) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -40,6 +41,38 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_23_134630) do
     t.bigint "blob_id", null: false
     t.string "variation_digest", null: false
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
+=======
+ActiveRecord::Schema[7.0].define(version: 2022_08_23_124058) do
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "bookings", force: :cascade do |t|
+    t.date "start_date"
+    t.date "end_date"
+    t.integer "total_price"
+    t.integer "rating"
+    t.bigint "renter_id", null: false
+    t.bigint "clothe_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["clothe_id"], name: "index_bookings_on_clothe_id"
+    t.index ["renter_id"], name: "index_bookings_on_renter_id"
+  end
+
+  create_table "clothes", force: :cascade do |t|
+    t.string "title"
+    t.string "description"
+    t.string "gender"
+    t.string "size"
+    t.string "category"
+    t.string "color"
+    t.string "picture_url"
+    t.integer "daily_price"
+    t.bigint "owner_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["owner_id"], name: "index_clothes_on_owner_id"
+>>>>>>> e973c65803b0288c69368adbb45ddbec52acf5f7
   end
 
   create_table "users", force: :cascade do |t|
@@ -50,10 +83,17 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_23_134630) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "user_name"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+<<<<<<< HEAD
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+=======
+  add_foreign_key "bookings", "clothes"
+  add_foreign_key "bookings", "users", column: "renter_id"
+  add_foreign_key "clothes", "users", column: "owner_id"
+>>>>>>> e973c65803b0288c69368adbb45ddbec52acf5f7
 end
