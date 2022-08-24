@@ -24,6 +24,9 @@ clara_picture = URI.open("https://static1.purepeople.com/articles/0/36/60/50/@/5
 
 thomas_picture = URI.open("https://scontent-cdg2-1.xx.fbcdn.net/v/t39.30808-6/280010191_2469513089858366_6669507285336492253_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Slb5pmcO6TkAX8QMILw&_nc_ht=scontent-cdg2-1.xx&oh=00_AT-NtCCmHK_hK_KhxkWKIgQz3-QiIJGIscPwpNQuZod1gQ&oe=6308BC53")
 
+puts "destroy all clothes"
+Clothe.destroy_all
+
 puts "destroying users"
 User.destroy_all
 
@@ -43,35 +46,35 @@ clara.save
 thomas.photo.attach(io: thomas_picture, filename: 'thomas_picture.jpg')
 
 puts "seeding clothes"
-borat = Clothe.create(title: "Borat", description: "Very good for warehouse", gender: "Man", size: "XL", category: "Accessories", color: "Green", address: "2 rue des veilles douves", daily_price: 2, owner: raphael);
-borat.photo.attach(io: borat, filename: "1640813380.jpeg")
+borat = Clothe.create!(title: "Borat", description: "Very good for warehouse", gender: "Man", size: "XL", category: "Accessories", color: "Green", address: "2 rue des veilles douves", daily_price: 2, owner: raphael);
+borat.photo.attach(io: borat_pic, filename: "1640813380.jpeg")
 
-jacket = Clothe.create(title: "Jacket", description: "A casual jacket", gender: "Man", size: "S", category: "Jackets", color: "Blue", address: "2 rue des veilles douves", daily_price: 3, owner: marwan);
+jacket = Clothe.create!(title: "Jacket", description: "A casual jacket", gender: "Man", size: "S", category: "Jackets", color: "Blue", address: "2 rue des veilles douves", daily_price: 3, owner: marwan);
 jacket.photo.attach(io: jacket_pic, filename: "1654457253.jpeg")
 
-parka = Clothe.create(title: "Parka", description: "A casual parka", gender: "Man", size: "M", category: "Parkas", color: "Brown", address: "2 rue des veilles douves", daily_price: 4, owner: raphael);
+parka = Clothe.create!(title: "Parka", description: "A casual parka", gender: "Man", size: "M", category: "Parkas", color: "Brown", address: "2 rue des veilles douves", daily_price: 4, owner: raphael);
 parka.photo.attach(io: parka_pic, filename: "1660580984.jpeg")
 
-sweater = Clothe.create(title: "Sweater", description: "A casual sweater", gender: "Man", size: "L", category: "Sweaters", color: "Black", address: "2 rue des veilles douves", daily_price: 7, owner: marwan);
+sweater = Clothe.create!(title: "Sweater", description: "A casual sweater", gender: "Man", size: "L", category: "Sweaters", color: "Black", address: "2 rue des veilles douves", daily_price: 7, owner: marwan);
 sweater.photo.attach(io: sweater_pic, filename: "1660315349.jpeg")
 
-cardigan = Clothe.create(title: "Cardigan", description: "A casual cardigan", gender: "Man", size: "XL", category: "Cardigans", color: "Green", address: "2 rue des veilles douves", daily_price: 2, owner: raphael);
+cardigan = Clothe.create!(title: "Cardigan", description: "A casual cardigan", gender: "Man", size: "XL", category: "Cardigans", color: "Green", address: "2 rue des veilles douves", daily_price: 2, owner: raphael);
 cardigan.photo.attach(io: cardigan_pic, filename: "1654946105.jpeg")
 
-t_shirt = Clothe.create(title: "T-shirt", description: "A casual t-shirt", gender: "Women", size: "XXL", category: "T-shirts", color: "White", address: "2 rue des veilles douves", daily_price: 3, owner: clara);
+t_shirt = Clothe.create!(title: "T-shirt", description: "A casual t-shirt", gender: "Women", size: "XL", category: "T-shirt", color: "White", address: "2 rue des veilles douves", daily_price: 3, owner: clara);
 t_shirt.photo.attach(io: tee_shirt_pic, filename: "1660819867.jpeg")
 
-tank_top = Clothe.create(title: "Tank-top", description: "A casual tank-top", gender: "Women", size: "S", category: "Tank-top", color: "Blue", address: "2 rue des veilles douves", daily_price: 4, owner: clara);
+tank_top = Clothe.create!(title: "Tank-top", description: "A casual tank-top", gender: "Women", size: "S", category: "Tank-top", color: "Blue", address: "2 rue des veilles douves", daily_price: 4, owner: clara);
 tank_top.photo.attach(io: tank_top_pic, filename: "1657552619.jpeg")
 
-shirt = Clothe.create(title: "Shirt", description: "A casual shirt", gender: "Women", size: "S", category: "Shirt", color: "Pink", address: "2 rue des veilles douves", daily_price: 5, owner: clara);
+shirt = Clothe.create!(title: "Shirt", description: "A casual shirt", gender: "Women", size: "S", category: "Shirt", color: "Pink", address: "2 rue des veilles douves", daily_price: 5, owner: clara);
 shirt.photo.attach(io: shirt_pic, filename: "1656444714.jpeg")
 
-hoodie = Clothe.create(title: "Hoodie", description: "A casual hoodie", gender: "Women", size: "M", category: "Hoodie", color: "Green", address: "2 rue des veilles douves", daily_price: 2, owner: clara);
+hoodie = Clothe.create!(title: "Hoodie", description: "A casual hoodie", gender: "Women", size: "M", category: "Hoodie", color: "Green", address: "2 rue des veilles douves", daily_price: 2, owner: clara);
 hoddie.photo.attach(io: hoodie_pic, filename:"1660751547.jpeg")
 
-crop_top = Clothe.create(title: "Crop top", description: "A casual crop top", gender: "Women", size: "L", category: "Crop top", color: "Velvet", address: "2 rue des veilles douves", daily_price: 1, owner: clara);
+crop_top = Clothe.create!(title: "Crop top", description: "A casual crop top", gender: "Women", size: "L", category: "Crop top", color: "Velvet", address: "2 rue des veilles douves", daily_price: 1, owner: clara);
 crop_top.photo.attach(io: crop_top_pic, filename:"1661272987.jpeg")
 
-borat_booking = Booking.create(start_date: "24/08/22", end_date: "28/08/22", total_price: 8, rating: 5, clothe: borat);
-crop_top_booking = Booking.create(start_date: "25/08/22", end_date: "30/08/22", total_price: 5, rating: 3, clothe: crop_top);
+borat_booking = Booking.create!(start_date: "24/08/22", end_date: "28/08/22", total_price: 8, rating: 5, clothe: borat);
+crop_top_booking = Booking.create!(start_date: "25/08/22", end_date: "30/08/22", total_price: 5, rating: 3, clothe: crop_top);
