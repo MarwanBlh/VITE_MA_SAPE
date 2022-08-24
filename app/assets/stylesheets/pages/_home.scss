@@ -1,1 +1,57 @@
-// Specific CSS for your home-page
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+}
+
+.banner h1 {
+  margin: 0;
+  color: whitesmoke;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .9;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.btn-rent{
+  color: white;
+  padding: 8px 40px;
+  border-radius: 50px;
+  font-weight: bold;
+  background: linear-gradient(#4A4A4A, #777676);
+  transition: background 0.3s ease;
+}
+
+
+.btn-rent:hover {
+  background: linear-gradient(#777676, #a2a1a1);
+  color: white;
+}
+
+.container-home h2 {
+  margin-top: 50px;
+  width: 500px;
+  margin-left: 80px;
+}
+.container-home p{
+  margin-top: 20px;
+  width: 600px;
+  margin-left: 80px;
+}
+
+.container-home2 h2 {
+  margin-top: 50px;
+  width: 500px;
+  margin-left: 620px;
+}
+.container-home2 p{
+  margin-top: 20px;
+  width: 600px;
+  margin-left: 620px;
+}
