@@ -21,7 +21,6 @@ crop_top_pic = URI.open("https://images1.vinted.net/t/02_01b45_dBD72uG1XZ464sotT
 raphael_picture = URI.open("https://media-exp1.licdn.com/dms/image/C4E03AQGoff3WMy8Nqw/profile-displayphoto-shrink_200_200/0/1658735391018?e=1665014400&v=beta&t=tj3_20ppo26RfcTRLunmDZCxkbcCmGt08bPVVQkpznQ")
 marwan_picture = URI.open("https://upload.wikimedia.org/wikipedia/commons/0/04/Marwan_Mohsen.jpg")
 clara_picture = URI.open("https://static1.purepeople.com/articles/0/36/60/50/@/5278196-clara-luciani-arrivees-au-defile-de-mo-624x600-2.jpg")
-
 thomas_picture = URI.open("https://scontent-cdg2-1.xx.fbcdn.net/v/t39.30808-6/280010191_2469513089858366_6669507285336492253_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Slb5pmcO6TkAX8QMILw&_nc_ht=scontent-cdg2-1.xx&oh=00_AT-NtCCmHK_hK_KhxkWKIgQz3-QiIJGIscPwpNQuZod1gQ&oe=6308BC53")
 
 puts "destroy bookings"
