@@ -8,11 +8,11 @@
   <% @clothes.each do |clothe| %>
     <div class="col-sm-12 col-md-4 mb-2">
       <div class="card">
-        <%# <%= image_tag clothe.picture_url, class: "card-img-top" %> %>
-        <img class="card-img-top" src="https://images1.vinted.net/t/02_00d09_1KgjXLaGu1i1K4ppsx8n6BxY/f800/1661269259.jpeg?s=d1cac75b03b640c45ef577722897286ade1c63c6">
+        <%# <%= image_tag clothe.picture_url, class: "card-img-top" %>
+        <img class="card-img-top" src="https://images1.vinted.net/t/03_00134_GnnWTbEEJL8iAPEonQa4nUgJ/310x430/1649803250.jpeg?s=1ef42b385f67f61a4eebb7c070bb59222f58fb52">
         <div class="card-body">
           <h5 class="card-title"><%= clothe.title %></h5>
-          <h6 class="card-price"><%= clothe.price %></h5>
+          <h6 class="card-price"><%= clothe.daily_price %></h5>
           <ul class="card-information">
             <li><%= clothe.size %></li>
             <li><%= clothe.address %></li>
