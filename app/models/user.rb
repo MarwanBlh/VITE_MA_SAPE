@@ -7,4 +7,8 @@ class User < ApplicationRecord
   has_many :clothes, foreign_key: :owner_id
   has_many :bookings, foreign_key: :renter_id
   has_many :received_bookings, through: :clothes, source: :bookings
+
+  validates :user_name, presence: true, uniqueness: true
+  validates :email, presence: true, uniqueness: true
+  validates :password, presence: true
 end
