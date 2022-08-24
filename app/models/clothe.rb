@@ -10,7 +10,6 @@ class Clothe < ApplicationRecord
   SIZE = %W[XS S M L XL]
   COLOR = %W[Black White Blue Green Purple Pink Yellow Orange Brown Red]
 
-  # vérifier si on n'a pas besoin de 'presence: true' avec inclusion
   validates :title, presence: true
   validates :description, presence: true
   validates :gender, inclusion: { in: GENDER }

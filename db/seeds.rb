@@ -79,5 +79,7 @@ hoodie.photo.attach(io: hoodie_pic, filename:"1660751547.jpeg")
 crop_top = Clothe.create!(title: "Crop top", description: "A casual crop top", gender: "Women", size: "L", category: "Crop top", color: "Purple", address: "2 rue des veilles douves", daily_price: 1, owner: clara);
 crop_top.photo.attach(io: crop_top_pic, filename:"1661272987.jpeg")
 
+puts "seeding booking"
+
 borat_booking = Booking.create!(start_date: "24/08/22", end_date: "28/08/22", total_price: 8, rating: 5, clothe: borat, renter: thomas);
 crop_top_booking = Booking.create!(start_date: "25/08/22", end_date: "30/08/22", total_price: 5, rating: 3, clothe: crop_top, renter: thomas);
