@@ -3,9 +3,10 @@ class Clothe < ApplicationRecord
 
   has_many :bookings
 
+  has_one_attached :photo
 
   CATEGORY = %W[Jackets Parkas Sweaters Cardigans T-shirt Tank\ top Shirt Hoodie Crop\ top Sport\ sweat Socks Shoes Neckless Accessories]
-  GENDER = %W[man women]
+  GENDER = %W[Man Women]
   SIZE = %W[XS S M L XL]
   COLOR = %W[Black White Blue Green Purple Pink Yellow Orange Brown Red]
 
