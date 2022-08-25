@@ -72,7 +72,7 @@ tank_top.photo.attach(io: tank_top_pic, filename: "1657552619.jpeg")
 shirt = Clothe.create!(title: "Shirt", description: "A casual shirt", gender: "Women", size: "S", category: "Shirt", color: "Pink", address: "2 rue des veilles douves", daily_price: 5, owner: clara);
 shirt.photo.attach(io: shirt_pic, filename: "1656444714.jpeg")
 
-hoodie = Clothe.create!(title: "Hoodie", description: "A casual hoodie", gender: "Women", size: "M", category: "Hoodie", color: "Green", address: "2 rue des veilles douves", daily_price: 2, owner: clara);
+hoodie = Clothe.create!(title: "Hoodie", description: "A casual hoodie", gender: "Women", size: "M", category: "Hoodie", color: "Green", address: "2 rue des veilles douves", daily_price: 2, owner: thomas);
 hoodie.photo.attach(io: hoodie_pic, filename:"1660751547.jpeg")
 
 crop_top = Clothe.create!(title: "Crop top", description: "A casual crop top", gender: "Women", size: "L", category: "Crop top", color: "Purple", address: "2 rue des veilles douves", daily_price: 1, owner: clara);
