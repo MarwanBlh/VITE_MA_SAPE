@@ -14,7 +14,21 @@
             </div>
             <div class="card-info">
               <p class="text-title"><%= clothe.title %></p>
-              <p class="text-body">( <%= clothe.size %> ) | <%= clothe.description %> </p>
+              <div class="card-info-sub">
+                <div class="card-size">
+                  <i class="fa-solid fa-ruler"></i>
+                  <div class="card-size-texte">
+                    <p class="text-body"><%= clothe.size %></p>
+                  </div>
+                </div>
+                <div class="card-category">
+                  <i class="fa-solid fa-shirt"></i>
+                  <div class="card-category-texte">
+                    <p class="text-body"><%= clothe.category %></p>
+                  </div>
+                </div>
+              </div>
+              <p class="text-body"><%= clothe.description %> </p>
             </div>
             <div class="card-footer">
               <span class="text-title">€<%= clothe.daily_price %></span>
