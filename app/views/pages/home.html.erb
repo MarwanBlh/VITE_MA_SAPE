@@ -1,17 +1,12 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://www.greenbiz.com/sites/default/files/images/articles/featured/rentclothes.png);">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://i.guim.co.uk/img/media/746d85eb450c911eca54abf4c1a1eb8afa4e9f07/163_74_2704_1622/master/2704.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=a46baeb1721d50e1ff79f2cff598695f);">
+<% unless user_signed_in? %>
+  <li class="nav-item">
+    <%= link_to "Login", new_user_session_path, class: "nav-link-home" %>
+  </li>
+<% end %>
   <div class="container">
-    <h1>Rent <strong>clothes</strong> and <strong>travel without luggage</strong></h1>
-    <p>Change your way of travelling and dressing</p>
-    <a class="btn btn-rent" href="/clothes">Rent now</a>
+    <h1>Rent clothes and travel without luggage</h1>
+    <p>Change your way of <strong>travelling</strong> and <strong>dressing</strong></p>
+    <a class="btn btn-rent" href="/clothes">Rent Clothes</a>
   </div>
-</div>
-
-<div class="container-home">
-  <h2>Are you ready to explore new possibilities of travelling ?</h2>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est omnis sapiente eligendi aliquam sint ab quidem necessitatibus eaque, repellendus libero labore illo optio, quam dicta magnam numquam quia ullam laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quas sint asperiores corporis? Nobis illo dolor tenetur, laboriosam facere beatae, tempora id voluptatibus, natus deleniti quas. Mollitia necessitatibus consequatur explicabo!Lorem ipsum dolor sit amet consectetur adipisicing elit. Est omnis sapiente eligendi aliquam sint ab quidem necessitatibus eaque, repellendus libero labore illo optio, quam dicta magnam numquam quia ullam laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. voluptatibus, natus deleniti quas. Mollitia necessitatibus consequatur explicabo!</p>
-</div>
-
-<div class="container-home2">
-  <h2>Who are we ?</h2>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est omnis sapiente eligendi aliquam sint ab quidem necessitatibus eaque, repellendus libero labore illo optio, quam dicta magnam numquam quia ullam laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quas sint asperiores corporis? Nobis illo dolor tenetur, laboriosam facere beatae, tempora id voluptatibus, natus deleniti quas. Mollitia necessitatibus consequatur explicabo!Lorem ipsum dolor sit amet consectetur adipisicing elit. Est omnis sapiente eligendi aliquam sint ab quidem necessitatibus eaque, repellendus libero labore illo optio, quam dicta magnam numquam quia ullam laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. voluptatibus, natus deleniti quas. Mollitia necessitatibus consequatur explicabo!</p>
 </div>
