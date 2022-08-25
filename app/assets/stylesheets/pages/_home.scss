@@ -1,19 +1,21 @@
 .banner {
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
+  padding: 100px 0px 0px 0;;
+  height: 100vh;
+  position:relative;
 }
 
 .banner h1 {
   margin: 0;
   color: whitesmoke;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
 }
 
 .banner p {
-  font-size: 20px;
+  font-size: 30px;
   color: white;
   opacity: .9;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
@@ -21,23 +23,26 @@
 
 .btn-rent{
   color: white;
-  padding: 8px 40px;
+  padding: 5px 30px;
   border-radius: 50px;
   font-weight: bold;
-  background: linear-gradient(#4A4A4A, #777676);
+  background: linear-gradient($sky, $sky);
   transition: background 0.3s ease;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
 
 
 .btn-rent:hover {
-  background: linear-gradient(#777676, #a2a1a1);
+  background: linear-gradient($sky, #ccdfed);
   color: white;
+  border-color: white;
 }
 
 .container-home h2 {
   margin-top: 50px;
   width: 500px;
   margin-left: 80px;
+
 }
 .container-home p{
   margin-top: 20px;
@@ -54,4 +59,24 @@
   margin-top: 20px;
   width: 600px;
   margin-left: 620px;
+}
+
+.nav-link-home{
+  color: white;
+  padding: 5px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  background: linear-gradient($sky, $sky);
+  transition: background 0.3s ease;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  width: 107px;
+  position:absolute; right:50px; top:20px;
+  text-decoration: none;
+}
+
+.nav-link-home:hover {
+  background: linear-gradient($sky, #ccdfed);
+  color: white;
+  border-color: white;
+  text-decoration: none;
 }
