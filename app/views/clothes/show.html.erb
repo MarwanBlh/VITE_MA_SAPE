@@ -12,13 +12,10 @@
         <h2 class="card-clothe-pricing"><%= @clothe.daily_price %> € </h2>
       </div>
       <%= cl_image_tag @clothe.owner.photo.key, height: 100, width: 100, crop: :fill, class: "card-clothe-user avatar-bordered" %>
-
       <div class="card-clothe-booking">
         <h2>Booking</h2>
         <%= render 'bookings/form' %>
       </div>
     </div>
   </div>
-
-
 </div>
