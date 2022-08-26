@@ -44,7 +44,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_26_111215) do
 
   create_table "bookings", force: :cascade do |t|
     t.date "start_date"
-    t.date "end_date"
     t.integer "total_price"
     t.integer "rating"
     t.bigint "renter_id", null: false
@@ -52,6 +51,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_26_111215) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "status"
+    t.date "end_date"
     t.index ["clothe_id"], name: "index_bookings_on_clothe_id"
     t.index ["renter_id"], name: "index_bookings_on_renter_id"
   end
