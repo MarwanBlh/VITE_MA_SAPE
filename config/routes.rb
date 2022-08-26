@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'renter_menu/index'
+  get 'dresser_menu/index'
   devise_for :users
   root to: "pages#home"
 
@@ -12,4 +14,7 @@ Rails.application.routes.draw do
     end
   end
   resource :dresser_menu, only: [:show]
+  resource :renter_menu, only: [:index]
 end
+
+
