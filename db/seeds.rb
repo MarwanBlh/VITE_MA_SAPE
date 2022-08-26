@@ -7,21 +7,21 @@
 #   Character.create(name: "Luke", movie: movies.first)
 require "open-uri"
 
-borat_pic = URI.open("https://images1.vinted.net/t/03_00604_6sMU9RpKoVXrRqGodu9YR8Ee/f800/1640813380.jpeg?s=7d4394dd2a008835e4a96e166650f544dee738e0")
-jacket_pic = URI.open("https://images1.vinted.net/t/01_00676_xP7bqu4a2iFLa5gbbF7VLGg7/f800/1654457253.jpeg?s=7d93193e4a3f5e5b77847c19f4f14a84ad223202")
-parka_pic = URI.open("https://images1.vinted.net/t/01_01021_RDRUrnnZMfnjbnJxNM56zL6R/f800/1660580984.jpeg?s=3e4f284c94a75ce5449c98a6a2d22def4716e0c2")
-sweater_pic = URI.open("https://images1.vinted.net/t/02_01105_K8AYEbxCY2X4WfvcRhAr9EgP/f800/1660315349.jpeg?s=eba1342cb612015caf7c805903db689edddfffd7")
-cardigan_pic = URI.open("https://images1.vinted.net/t/02_00950_8anzni6vZ6EZ2DYvEsYFXosJ/f800/1654946105.jpeg?s=f6e5cfa8f3aafd1cb975635b32b868b6c5e04346")
-tee_shirt_pic = URI.open("https://images1.vinted.net/t/03_01fab_p4PX6qeuv8q2kpVhsT9msokE/f800/1660819867.jpeg?s=41681c2506cf89dccd0a44d76edce0e7b25b64fe")
-tank_top_pic = URI.open("https://images1.vinted.net/t/02_024bb_6QdufbWfYavmoTHTiaMFtPVs/f800/1657552619.jpeg?s=2bbbd353d759bfec5268d4e353f96640b59e7f84")
-shirt_pic = URI.open("https://images1.vinted.net/t/02_00d38_vcqvUFs69SwcKeLACjy8x34G/f800/1656444714.jpeg?s=e993a72a66df59728da55de5b77098da0f8cd910")
-hoodie_pic = URI.open("https://images1.vinted.net/t/02_0134a_KW14AxswrFpTTDKMjxBzkDT6/f800/1660751547.jpeg?s=7daf3d06892a05bed7accf2e96f5fc7e276c2b95")
-crop_top_pic = URI.open("https://images1.vinted.net/t/02_01b45_dBD72uG1XZ464sotTeH1Vv9M/f800/1661272987.jpeg?s=0f999871c1dbbd196d792ed30600694934190ef6")
+borat_pic = URI.open("https://www.cdiscount.com/pdt2/8/5/6/1/700x700/auc7569000747856/rw/maillot-de-bain-borat-mankini.jpg")
+jacket_pic = URI.open("https://imagescdn.allensolly.com/img/app/product/2/253003-945846.jpg?auto=format")
+parka_pic = URI.open("https://images.asos-media.com/products/asos-design-parka-legere-marron-clair/200407374-1-lightbrown?$n_640w$&wid=513&fit=constrain")
+sweater_pic = URI.open("https://image.tfgmedia.co.za/image/1/process/486x486?source=https://cdn.tfgmedia.co.za/03/ProductImages/59447924.jpg")
+cardigan_pic = URI.open("https://i5.walmartimages.com/asr/471a0e4c-1e83-403c-805c-3ac60ce67650.02bc012d6dfdebf39fda275ff3491964.jpeg")
+tee_shirt_pic = URI.open("https://sc01.alicdn.com/kf/U02f8214616674cebb4e1a08231ee13580.jpg")
+tank_top_pic = URI.open("https://d1l2kcmc130e06.cloudfront.net/2/images/colors_240x300/bella-canvas-6008-true-royal.jpg")
+shirt_pic = URI.open("https://5.imimg.com/data5/CE/XG/MY-68030708/mens-readymade-pink-shirt-500x500.jpg")
+hoodie_pic = URI.open("https://img01.ztat.net/article/spp-media-p1/6057be667e4646cdb14475c8d1166969/59430b7f064d4b918ddabe0abc0c42cc.jpg?imwidth=1800")
+crop_top_pic = URI.open("https://media.boohoo.com/i/boohoo/gzz00185_lilac_xl?w=900&qlt=default&fmt.jp2.qlt=70&fmt=auto&sm=fit")
 
 raphael_picture = URI.open("https://media-exp1.licdn.com/dms/image/C4E03AQGoff3WMy8Nqw/profile-displayphoto-shrink_200_200/0/1658735391018?e=1665014400&v=beta&t=tj3_20ppo26RfcTRLunmDZCxkbcCmGt08bPVVQkpznQ")
-marwan_picture = URI.open("https://upload.wikimedia.org/wikipedia/commons/0/04/Marwan_Mohsen.jpg")
+marwan_picture = URI.open("https://media-exp1.licdn.com/dms/image/C4E03AQGm4rLGWJanYg/profile-displayphoto-shrink_800_800/0/1593190812282?e=1666828800&v=beta&t=phSR8PbKJ0iN_2yd7RFfmxXQdUCmQkyDxLE00-UMwb4")
 clara_picture = URI.open("https://static1.purepeople.com/articles/0/36/60/50/@/5278196-clara-luciani-arrivees-au-defile-de-mo-624x600-2.jpg")
-thomas_picture = URI.open("https://scontent-cdg2-1.xx.fbcdn.net/v/t39.30808-6/280010191_2469513089858366_6669507285336492253_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=6sZvNK1tJNkAX8nU8Fx&_nc_ht=scontent-cdg2-1.xx&oh=00_AT_BXZyqT4DYxrdEfCtZ9Eus3109Mx8CBFHDVP7C8muo7A&oe=630EAB13")
+thomas_picture = URI.open("https://media-exp1.licdn.com/dms/image/D4E35AQG2w_8WX7081A/profile-framedphoto-shrink_800_800/0/1660503595302?e=1662130800&v=beta&t=emdf1w79jfz0MXdAS-xJoDhLJZrJBIFowiDBuplWDaY")
 
 puts "destroy bookings"
 Booking.destroy_all
