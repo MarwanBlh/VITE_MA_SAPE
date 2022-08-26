@@ -1,34 +1,49 @@
+
 .card-clothe {
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-}
-
-.card-show {
   display: flex;
-  flex-direction: column;
   align-items: center;
-}
-
-.card-clothe h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
+  height: 600px;
+  width: 1000px;
+  border-radius: 8px;
+  position: relative;
 }
 
 .card-clothe p {
-  font-size: 12px;
+  font-size: 16px;
   opacity: .7;
   margin: 0;
 }
 
+.card-clothe-booking {
+  width: 600px;
+  height: 100%;
+
+}
+
+.card-clothe-image{
+  width: 700px;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-clothe h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
 
 .card-clothe .card-clothe-infos {
   padding: 16px;
   display: flex;
+  height: 500px;
   justify-content: space-between;
+  flex-direction: column;
   align-items: flex-end;
-  position: relative;
+  width: 100%;
 }
 
 .card-clothe-infos .card-clothe-user {
