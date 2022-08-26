@@ -8,6 +8,7 @@
   padding: 0px !important;
   margin-top: 20px;
   width: 900px;
+  position:relative;
 }
 
 .card-product img {
@@ -27,9 +28,74 @@
   line-height: 1.4;
   opacity: .7;
   margin-bottom: 0;
-  margin-top: 8px;
+  margin-top: 30px;
+
 }
 
-.card-product .card-product-infos {
-  padding: 16px ;
+.card-product-infos p {
+  margin-left: 60px;
+}
+
+.card-product-description{
+  position: absolute;
+  position: absolute;
+  left: 160px;
+  margin-top: 30px;
+}
+.card-product-infos {
+  display: flex;
+  align-items: baseline;
+  position: absolute;
+  left: 160px;
+  bottom: 75px;
+}
+
+.card-product:hover {
+  transform: scale(1.03);
+  box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+ }
+
+
+ .validate-button{
+  display: flex;
+  flex-direction: column;
+  position:absolute;
+  right: 20px;
+}
+
+.btn-accept{
+  color: white;
+  padding: 3px 25px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: bold;
+  background: linear-gradient($jasmine, $jasmine);
+  transition: background 0.3s ease;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+}
+
+
+.btn-accept:hover {
+  background: linear-gradient($jasmine, #eff1e9);
+  color: white;
+  border-color: white;
+}
+
+.btn-decline{
+  color: white;
+  padding: 3px 25px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: bold;
+  background: linear-gradient($rose, $rose);
+  transition: background 0.3s ease;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+
+.btn-decline:hover {
+  background: linear-gradient($rose, #f3d8d4);
+  color: white;
+  border-color: white;
 }
