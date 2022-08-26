@@ -14,6 +14,18 @@ class BookingsController < ApplicationController
     redirect_to root_path
   end
 
+  def accept_booking
+    @booking = Booking.find(params[:id])
+    @booking.status = "accepted"
+    @booking.save
+  end
+
+  def decline_booking
+    @booking = Booking.find(params[:id])
+    @booking.status = "declined"
+    @booking.save
+  end
+  
   private
   def set_clothe
     @clothe = Clothe.find(params[:clothe_id])

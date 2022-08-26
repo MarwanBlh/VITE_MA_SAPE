@@ -14,8 +14,11 @@ class ClothesController < ApplicationController
   def create
     @clothe = Clothe.new(params_clothe)
     @clothe.owner = current_user
-    @clothe.save # Will raise ActiveModel::ForbiddenAttributesError
-    redirect_to dresser_menu_path
+    if @clothe.save
+      redirect_to dresser_menu_path
+    else
+      render :new
+    end
   end
 
   private
