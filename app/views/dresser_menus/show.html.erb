@@ -13,10 +13,14 @@
         <div class="card-product-infos">
           <h2><%= booking.clothe.title %></h2>
           <p><strong><%= booking.clothe.size%></strong></p>
+          <p><strong><%= booking.clothe.daily_price%></strong></p>
           <p><strong><%= booking.start_date%></strong></p>
           <p><strong><%= booking.end_date%></strong></p>
-          <p><strong><%= booking.clothe.description%></strong></p>
-          <p><strong><%= booking.clothe.daily_price%></strong></p>
+        </div>
+          <p class="card-product-description"><strong><%= booking.clothe.description%></strong></p>
+        <div class="validate-button">
+          <%= link_to "Accept booking", accept_booking_path(booking), data: { 'turbo-method': :patch }, class:"btn btn-accept" %>
+          <%= link_to "Decline booking", accept_booking_path(booking), data: { 'turbo-method': :patch }, class:"btn btn-decline" %>
         </div>
       </div>
     <% end %>

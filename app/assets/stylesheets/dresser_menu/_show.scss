@@ -1,7 +1,8 @@
-.container{
-  position: relative;
+.row-product{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 .img-card-product{
   object-fit: cover;
 }
@@ -10,10 +11,13 @@
   margin-top: 20px;
 }
 
-.row-product{
-
-}
 
 .row-clothes{
   margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-clothe{
+  margin-top: 40px;
 }
