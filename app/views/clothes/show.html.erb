@@ -4,12 +4,38 @@
     <div class="card-clothe-image"style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @clothe.photo.key, height: 300, crop: :fill %>')">
     </div>
     <div class="card-clothe-infos">
-      <div>
+      <div class="card-clothe-description">
         <h2><%= @clothe.title %></h2>
-        <h3><%= @clothe.category %> <%= @clothe.size %> <%= @clothe.gender %></h3>
+        <div class="card-clothe-symbol">
+          <div class="card-info-sub">
+            <div class="card-show-size">
+              <i class="fa-solid fa-ruler"></i>
+              <div class="card-show-size-texte">
+                <p><%= @clothe.size %></p>
+              </div>
+            </div>
+            <div class="card-category">
+              <i class="fa-solid fa-shirt"></i>
+              <div class="card-category-texte">
+                <p><%= @clothe.category %></p>
+              </div>
+            </div>
+            <div class="card-gender">
+              <i class="fa-solid fa-person-half-dress"></i>
+              <div class="card-gender-texte">
+                <p><%= @clothe.gender %></p>
+              </div>
+            </div>
+          </div>
+        </div>
         <p><%= @clothe.description %></p>
-        <p><%= @clothe.address %></p>
-        <h2 class="card-clothe-pricing"><%= @clothe.daily_price %> € </h2>
+        <div class="card-category">
+          <i class="fa-solid fa-house"></i>
+          <div class="card-category-texte">
+            <p><%= @clothe.address %></p>
+          </div>
+        </div>
+        <h6 class="card-clothe-pricing"> Daily price : <%= @clothe.daily_price %> € </h6>
       </div>
       <%= cl_image_tag @clothe.owner.photo.key, height: 100, width: 100, crop: :fill, class: "card-clothe-user avatar-bordered" %>
 
@@ -19,6 +45,4 @@
       </div>
     </div>
   </div>
-
-
 </div>
