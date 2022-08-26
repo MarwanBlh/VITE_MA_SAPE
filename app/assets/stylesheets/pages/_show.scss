@@ -6,21 +6,9 @@
   display: flex;
   align-items: center;
   height: 600px;
-  width: 1000px;
+  margin: 30px;
   border-radius: 8px;
   position: relative;
-}
-
-.card-clothe p {
-  font-size: 16px;
-  opacity: .7;
-  margin: 0;
-}
-
-.card-clothe-booking {
-  width: 600px;
-  height: 100%;
-
 }
 
 .card-clothe-image{
@@ -30,25 +18,55 @@
   background-position: center;
 }
 
-.card-clothe h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0;
-}
-
 .card-clothe .card-clothe-infos {
   padding: 16px;
   display: flex;
   height: 500px;
   justify-content: space-between;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   width: 100%;
+}
+
+.card-info-sub {
+  justify-content: space-around;
+}
+
+.card-show-size {
+  display: flex;
+  flex-direction: row;
+  padding-right: 15px;
+ }
+.card-show-size-texte {
+padding-left: 10px;
+}
+
+.card-gender {
+display: flex;
+flex-direction: row;
+padding-right: 15px;
+}
+.card-gender-texte{
+padding-left: 10px;
 }
 
 .card-clothe-infos .card-clothe-user {
   position: absolute;
-  right: 16px;
-  top: -20px;
-  width: 103px;
+  right: 70px;
+  top: 170px;
+  width: auto;
+}
+
+.card-clothe-description {
+  padding: 16px;
+  width: 100%;
+
+}
+.card-clothe-booking {
+  padding: 16px;
+  width: 100%;
+}
+.col-6 {
+  flex: 0 0 auto;
+  width: 100%;
 }

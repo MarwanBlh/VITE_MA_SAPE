@@ -1,15 +1,10 @@
 <div class="row">
-  <div class="col">
-    <h1>Rent a clothe</h1>
-  </div>
-</div>
-<div class="row">
   <div class="col-6">
     <%= simple_form_for([@clothe, Booking.new]) do |f| %>
-      <%= f.input :start_date, as: :date %>
-      <%= f.input :end_date, as: :date %>
+      <%= f.input :start_date, as: :date, input: Time.now, html5: true %>
+      <%= f.input :end_date, as: :date, html5: true %>
 
-      <div class="d-flex justify-content-end">
+      <div class="d-flex justify-content-center">
         <%= f.button :submit  %>
       </div>
     <% end -%>
