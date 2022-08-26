@@ -8,12 +8,11 @@ class BookingsController < ApplicationController
   def create
     @booking = Booking.new(booking_params)
     @booking.clothe = @clothe
-
+    @booking.renter = current_user
     @booking.save
 
     redirect_to root_path
   end
-
 
   private
   def set_clothe
