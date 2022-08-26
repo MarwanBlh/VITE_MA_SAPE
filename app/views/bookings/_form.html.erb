@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col">
+    <h1>Rent a clothe</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-6">
+    <%= simple_form_for([@clothe, Booking.new]) do |f| %>
+      <%= f.input :start_date, as: :date %>
+      <%= f.input :end_date, as: :date %>
+
+      <div class="d-flex justify-content-end">
+        <%= f.button :submit  %>
+      </div>
+    <% end -%>
+  </div>
+</div>

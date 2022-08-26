@@ -4,7 +4,7 @@ class ClothesController < ApplicationController
   end
 
   def index
-    @clothes = Clothe.all
+    @clothes = Clothe.where.not(owner:current_user)
   end
 
   def new

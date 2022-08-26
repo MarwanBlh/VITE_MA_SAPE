@@ -1,7 +1,7 @@
 <div class="container">
   <div class="card-clothe">
-    <div class="card-show">
-      <%= cl_image_tag @clothe.photo.key, height: 300, width: 400, crop: :fill %>
+
+    <div class="card-clothe-image"style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @clothe.photo.key, height: 300, crop: :fill %>')">
     </div>
     <div class="card-clothe-infos">
       <div>
@@ -9,23 +9,13 @@
         <h3><%= @clothe.category %> <%= @clothe.size %> <%= @clothe.gender %></h3>
         <p><%= @clothe.description %></p>
         <p><%= @clothe.address %></p>
+        <h2 class="card-clothe-pricing"><%= @clothe.daily_price %> € </h2>
       </div>
-      <h2 class="card-clothe-pricing"><%= @clothe.daily_price %></h2>
       <%= cl_image_tag @clothe.owner.photo.key, height: 100, width: 100, crop: :fill, class: "card-clothe-user avatar-bordered" %>
-    </div>
-    <div>
-      <h2>Booking</h2>
-
-      <form action="/clothes">
-        <label for="fname">Start date:</label><br>
-        <input type="text" id="fname" name="fname" value="JJ/MM/YYYY"><br>
-        <label for="lname">End date:</label><br>
-        <input type="text" id="lname" name="lname" value="JJ/MM/YYYY"><br><br>
-        <input type="submit" value="Submit">
-      </form>
-      
+      <div class="card-clothe-booking">
+        <h2>Booking</h2>
+        <%= render 'bookings/form' %>
+      </div>
     </div>
   </div>
-
-
 </div>

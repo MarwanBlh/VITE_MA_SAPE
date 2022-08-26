@@ -20,7 +20,7 @@
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? && controller_name != 'pages' %>
           <li class="nav-item active">
-            <%= link_to "Dresser Dashboard", "#", class: "nav-link" %>
+            <%= link_to "Dresser Dashboard", "/dresser_menu", class: "nav-link" %>
           </li>
         <% end %>
         <% if user_signed_in? %>

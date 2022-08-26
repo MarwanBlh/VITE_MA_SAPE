@@ -1,32 +1,37 @@
 <div class="container">
   <div class="row">
-    <div class="col_title_all_clothes">
-      <h1>All clothes</h1>
+    <div class="col">
+      <h1>Manage my clothes</h1>
     </div>
   </div>
 
-  <div class="row">
-    <% @clothes.each do |clothe| %>
+
+  <div class="row-product">
+    <% @bookings.each do |booking| %>
+      <div class="card-product">
+        <img src="<%= cl_image_path booking.clothe.photo.key %>" class= img-card-product/>
+        <div class="card-product-infos">
+          <h2><%= booking.clothe.title %></h2>
+          <p><strong><%= booking.clothe.size%></strong></p>
+          <p><strong><%= booking.start_date%></strong></p>
+          <p><strong><%= booking.end_date%></strong></p>
+          <p><strong><%= booking.clothe.description%></strong></p>
+          <p><strong><%= booking.clothe.daily_price%></strong></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="row-clothes">
+    <% @myclothes.each do |clothe| %>
         <div class="col-sm-12 col-md-4 mb-2">
           <div class="card-wrapper">
             <div class="card">
               <div class="card-img"style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path clothe.photo.key, height: 300, crop: :fill %>')">
               </div>
               <div class="card-info">
-                <div class="card-info-sub">
-                  <div class="card-size">
-                    <i class="fa-solid fa-ruler"></i>
-                    <div class="card-size-texte">
-                      <p class="text-body"><%= clothe.size %></p>
-                    </div>
-                  </div>
-                  <div class="card-category">
-                    <i class="fa-solid fa-shirt"></i>
-                    <div class="card-category-texte">
-                      <p class="text-body"><%= clothe.category %></p>
-                    </div>
-                  </div>
-                </div>
+                <p class="text-title"><%= clothe.title %></p>
+                <p class="text-body">( <%= clothe.size %> ) | <%= clothe.description %> </p>
               </div>
               <div class="card-footer">
                 <span class="text-title">€<%= clothe.daily_price %></span>
