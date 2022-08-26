@@ -14,7 +14,5 @@ Rails.application.routes.draw do
     end
   end
   resource :dresser_menu, only: [:show]
-  resource :renter_menu, only: [:index]
+  resource :renter_menu, only: [:show]
 end
-
-
